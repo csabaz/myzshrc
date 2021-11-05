@@ -124,9 +124,6 @@ plugins=(
   tmux
 )
 
-# git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-completions $ZSH_CUSTOM/plugins/zsh-completions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-users/zsh-syntax-highlighting
 # themes
 # tmux
 # yum # for centOS
@@ -221,6 +218,20 @@ alias z='zypper'
 alias s='sudo'
 alias sctl='systemctl'
 
+---
 
+## required plugins/apps
+# git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-completions $ZSH_CUSTOM/plugins/zsh-completions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-users/zsh-syntax-highlighting
+# themes
+# tmux
+# yum # for centOS
+# apt install ruby-albino #for colorize
+# apt install powerline fonts-powerline psutils
+# mkdir -p ~/.config/powerline/themes/shell
+# vi ~/.config/powerline/themes/shell/default.json
+
+## symlinks
 # ln -sf ~/myzshrc/zshrc ~/.zshrc
 # ln -sf ~/myzshrc/themes/agnostercustom.zsh-theme ~/.oh-my-zsh/themes/
