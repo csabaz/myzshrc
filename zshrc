@@ -179,7 +179,7 @@ compinit
 zle -N znt-cd-widget
 bindkey "^P" znt-cd-widget
 
-# ctrl-u
+# ctrl-u - delete befor cursor
 bindkey "^U" backward-kill-line
 
 
