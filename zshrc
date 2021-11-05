@@ -124,14 +124,6 @@ plugins=(
   tmux
 )
 
-# themes
-# tmux
-# yum # for centOS
-# apt install ruby-albino #for colorize
-# apt install powerline fonts-powerline psutils
-# mkdir -p ~/.config/powerline/themes/shell
-# vi ~/.config/powerline/themes/shell/default.json
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -218,7 +210,7 @@ alias z='zypper'
 alias s='sudo'
 alias sctl='systemctl'
 
----
+# ---
 
 ## required plugins/apps
 # git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
