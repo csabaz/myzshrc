@@ -220,3 +220,7 @@ export SELECTED_EDITOR=$EDITOR
 alias z='zypper'
 alias s='sudo'
 alias sctl='systemctl'
+
+
+# ln -sf ~/myzshrc/zshrc ~/.zshrc
+# ln -sf ~/myzshrc/themes/agnostercustom.zsh-theme ~/.oh-my-zsh/themes/
