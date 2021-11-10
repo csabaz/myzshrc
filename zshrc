@@ -187,9 +187,9 @@ fi
 #neofetch
 
 #source /home/csabaz/.config/broot/launcher/bash/br
-#source <(kubectl completion zsh)
-#alias k=kubectl
-#complete -F __start_kubectl k
+source <(kubectl completion zsh)
+alias k=kubectl
+complete -F __start_kubectl k
 
 #alias spc="spacecmd -q"
 #function ssh () {/usr/bin/ssh -t $@ "tmux attach || tmux new";}
