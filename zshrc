@@ -210,6 +210,7 @@ alias z='zypper'
 alias s='sudo'
 alias sctl='systemctl'
 
+source ~/.profile
 # ---
 
 ## Oh my zsh
