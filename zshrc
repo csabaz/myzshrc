@@ -190,7 +190,7 @@ fi
 source <(kubectl completion zsh)
 alias k=kubectl
 complete -F __start_kubectl k
-
+export KUBECONFIG=~/.kube/config
 #alias spc="spacecmd -q"
 #function ssh () {/usr/bin/ssh -t $@ "tmux attach || tmux new";}
 #xrdb ~/.Xresources
