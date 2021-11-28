@@ -157,8 +157,11 @@ alias zshconfig="vim ~/.zshrc"
 #alias sudo='sudo '
 alias vi="nvim"
 source <(kubectl completion zsh)
+source <(helm completion zsh)
 alias k=kubectl
+alias h=helm
 complete -F __start_kubectl k
+complete -F __start_helm h
 export KUBECONFIG=~/.kube/config
 #alias spc="spacecmd -q"
 alias z='zypper'
