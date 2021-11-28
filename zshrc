@@ -156,6 +156,14 @@ alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias sudo='sudo '
 alias vi="nvim"
+source <(kubectl completion zsh)
+alias k=kubectl
+complete -F __start_kubectl k
+export KUBECONFIG=~/.kube/config
+#alias spc="spacecmd -q"
+alias z='zypper'
+alias s='sudo'
+alias sctl='systemctl'
 #alias ccat="pygmentize -g"
 #alias xtigervncviewer="vncviewer-tigervnc"
 #autoload -Uz compinit
@@ -187,11 +195,6 @@ fi
 #neofetch
 
 #source /home/csabaz/.config/broot/launcher/bash/br
-source <(kubectl completion zsh)
-alias k=kubectl
-complete -F __start_kubectl k
-export KUBECONFIG=~/.kube/config
-#alias spc="spacecmd -q"
 #function ssh () {/usr/bin/ssh -t $@ "tmux attach || tmux new";}
 #xrdb ~/.Xresources
 
@@ -206,10 +209,6 @@ export KUBECONFIG=~/.kube/config
 export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
 export SELECTED_EDITOR=$EDITOR
-alias z='zypper'
-alias s='sudo'
-alias sctl='systemctl'
-
 source ~/.profile
 # ---
 
