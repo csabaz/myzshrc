@@ -156,8 +156,20 @@ alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias sudo='sudo '
 alias vi="nvim"
-source <(kubectl completion zsh)
-source <(helm completion zsh)
+witch kubectl &>/dev/null
+if [[ $? -eq 0 ]]; then
+        source <(kubectl completion zsh) && echo "exists 'kubectl'"
+else
+	echo "!exists 'kubectl'"
+fi
+witch helm &>/dev/null
+if [[ $? -eq 0 ]]; then                       
+        source <(helm completion zsh) && echo "exists 'helm'"
+else    
+        echo "!exists 'helm'"
+fi
+
+alias vi="nvim"
 alias k=kubectl
 alias h=helm
 complete -F __start_kubectl k
@@ -215,10 +227,14 @@ export SELECTED_EDITOR=$EDITOR
 
 if [[ -f ~/.profile ]]; then
 	source ~/.profile && echo "exists '.profile'"
+else
+        echo "!exists '.profile'"
 fi
 
 if [[ -f ~/.customrc ]]; then
 	source ~/.customrc && echo "exists '.customrc'"
+else
+        echo "!exists '.customrc'"
 fi
 # ---
 
