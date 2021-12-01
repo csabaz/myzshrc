@@ -156,13 +156,13 @@ alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias sudo='sudo '
 alias vi="nvim"
-witch kubectl &>/dev/null
+which kubectl &>/dev/null
 if [[ $? -eq 0 ]]; then
         source <(kubectl completion zsh) && echo "exists 'kubectl'"
 else
 	echo "!exists 'kubectl'"
 fi
-witch helm &>/dev/null
+which helm &>/dev/null
 if [[ $? -eq 0 ]]; then                       
         source <(helm completion zsh) && echo "exists 'helm'"
 else    
