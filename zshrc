@@ -212,7 +212,14 @@ fi
 export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
 export SELECTED_EDITOR=$EDITOR
-source ~/.profile
+
+if [[ -f ~/.profile ]]; then
+	source ~/.profile && echo "exists '.profile'"
+fi
+
+if [[ -f ~/.customrc ]]; then
+	source ~/.customrc && echo "exists '.customrc'"
+fi
 # ---
 
 ## Oh my zsh
